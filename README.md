@@ -7,7 +7,7 @@ The example is a simple Spring Boot application that i created directly from: [s
 
 After the creation I added the appEngine official plugin to the pom.xml
 
-'''
+```
 ...
 <plugin>
 	<groupId>com.google.cloud.tools</groupId>
@@ -19,11 +19,11 @@ After the creation I added the appEngine official plugin to the pom.xml
 	</configuration>
 </plugin>
 ...
-'''
+```
 
-At the end I added the file app.yml in the folder 'appengine-springboot\src\main\appengine'.
-The 'app.yml' is the following:
-'''
+At the end I added the file app.yml in the folder `appengine-springboot\src\main\appengine`.
+The `app.yml` is the following:
+```
 runtime: java11
 instance_class: F1
-'''
+```
