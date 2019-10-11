@@ -7,7 +7,7 @@ The example is a simple Spring Boot application that i created directly from: [s
 
 After the creation I added the appEngine official plugin to the pom.xml
 
-```
+```xml
 ...
 <plugin>
 	<groupId>com.google.cloud.tools</groupId>
