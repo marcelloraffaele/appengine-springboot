@@ -3,22 +3,16 @@ package it.rmarcello.appenginespringboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-// Add imports
-import org.springframework.web.bind.annotation.*;
+import java.util.logging.Logger;
 
 @SpringBootApplication
-@RestController
 public class DemoApplication {
+  private static final Logger LOGGER = Logger.getLogger(MyScheduler.class.getName());
   public static void main(String[] args) {
+
+    LOGGER.info("starting the application");
     SpringApplication.run(DemoApplication.class, args);
   }
 
-  @GetMapping("/")
-  public String hello() {
-	  int x = (int)(Math.random()*100);
-	  String res = "TESTA";
-	  if( x%2==1)
-		  res = "CROCE";
-    return "Lancio monetina: " + res;
-  }
+
 }
