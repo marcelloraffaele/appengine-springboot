@@ -11,15 +11,20 @@ import java.util.GregorianCalendar;
 @RestController
 public class MyRestController {
 
-    
-
     @GetMapping("/")
-    public String hello() {
+    public String testaCroce() {
         int x = (int)(Math.random()*100);
         String res = "TESTA";
         if( x%2==1)
             res = "CROCE";
         return "Lancio monetina: " + res;
+    }
+
+    @GetMapping("/random")
+    public String random() {
+        int x = (int)(Math.random()*100);
+        String res = "NUMERO = " + x;
+        return res;
     }
 
 }

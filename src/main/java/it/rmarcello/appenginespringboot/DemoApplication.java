@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 @SpringBootApplication
 public class DemoApplication {
-  private static final Logger LOGGER = Logger.getLogger(MyScheduler.class.getName());
+  private static final Logger LOGGER = Logger.getLogger(DemoApplication.class.getName());
   public static void main(String[] args) {
 
     LOGGER.info("starting the application");
